@@ -1,0 +1,24 @@
+# Documentação do Projeto
+
+### Resumo
+    O projeto tem como objetivo simplificar o registro de despesas por meio de um formulário HTML. Os dados inseridos nesse formulário são enviados para uma API usando o método POST, que por sua vez, os registra em um banco de dados Postgres.
+
+### Abstract
+    The project aims to simplify the recording of expenses through an HTML form. Data entered into this form is sent to an API using the POST method, which in turn records it in a Postgres database.
+
+#### *Tecnologias:* HTML, CSS , JavaScript, Node.js, Postgress;
+
+
+### Pastas
+Dentro da pasta CSS, você verá o arquivo CSS que controla o estilo do HTML. Na pasta Server, estão todos os arquivos necessários para o funcionamento do lado de trás do sistema. O arquivo db.js lida com a conexão ao banco de dados, enquanto o arquivo index.js cria um servidor web para receber informações, faz a conexão com o banco e insere os dados por meio de um query no banco de dados.
+
+### Bibliotecas usadas do node
+Para iniciar o projeto o primeiro passo é rodar o comando dentro da pasta Server
+> npm init -y
+
+Depois para instalar as bibliotecas digite
+> npm pg express dotenv
+
+### Para o códgio funcionar
+* É preciso ter o banco de dados Postgres e o Nodejs instalado
+* Para a API funcionar é preciso iniciar a aplicação digitando no terinal: node *index.js*

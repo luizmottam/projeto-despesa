@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="CSS/style.css">
+   <title>Caixa</title>
+</head>
+<body>
+    <main class="container">
+        <div class="description">
+            <h2>Despesa</h2>
+            <p>Todo dinheiro do que saí do caixa</p><br>
+            <h4>Mensagem</h4>
+            <p>Lembre-se de que cada real gasto é uma escolha.<br>Faça com que cada escolha conte para seus objetivos e valores.<br>Acompanhe suas despesas com sabedoria e você estará um passo mais perto da liberdade financeira.</p>
+        </div>
+        <div>
+            <div class="cardSpent">
+                <h2>Novo Registro</h2><br>
+                <form id="expense">
+                    <select id="tipo">
+                        <option value="">Selecione um tipo</option>
+                        <option value="Alimentação">Alimentação</option>
+                        <option value="Transporte">Transporte</option>
+                        <option value="Moradia">Moradia</option>
+                        <option value="Lazer">Lazer</option>
+                        <option value="Geral">Geral</option>
+                    </select>
+                    <input type="text" id="valor" placeholder="Valor">
+                    <input type="text" id="descr" placeholder="Descrição">
+                    <input type="date" id="data"><br><br>
+                    <button type="submit">Add</button>
+                </form><br><br>
+            </div>
+            <div id="card" style="display: none;"></div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
