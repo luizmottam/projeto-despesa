@@ -58,6 +58,7 @@ div.cardSpent {
   border-radius: 20px;
   box-shadow: -10px 10px 10px rgba(0,0,0,0.8);
   font-family: 'Sanva', sans-serif; /* Set a font-family for the card content */
+  font-size: 18pt;
 }
 
 form {
@@ -112,3 +113,4 @@ button {
     background-position-x: 100%;
   }
 }
+

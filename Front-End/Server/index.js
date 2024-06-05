@@ -22,7 +22,7 @@ app.post('/api/data', async (req, res) => {
 
     try {
         // A função reservada .query é específica para dar instruções para o SQL
-        const result = await client.query('INSERT INTO despesas.saidas (tipo, valor, descricao, data) VALUES ($1, $2, $3, $4) RETURNING *', [tipo, valor, descricao, data]);
+        const result = await client.query('INSERT INTO despesas.saidas(tipo, valor, descricao, data) VALUES ($1, $2, $3, $4) RETURNING *', [tipo, valor, descricao, data]);
         res.json(result.rows[0]);  // Responde com os dados inseridos no formato JSON
     } catch (err) {
         console.error(err);
